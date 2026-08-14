@@ -552,7 +552,7 @@ function throwCups() {
   $('cup-result').classList.remove('show');
   setTimeout(() => {
     const rn = Math.random();
-    const out = rn < 0.5 ? 'sheng' : (rn < 0.75 ? 'xiao' : 'yin');
+    const out = rn < 0.8 ? 'sheng' : (rn < 0.9 ? 'xiao' : 'yin');
     const info = {
       sheng: { name: '聖筊', cls: 'sheng', msg: '桃花娘娘允准賜簽，可喜可賀！請前往搖籤筒求籤。' },
       xiao: { name: '笑筊', cls: 'xiao', msg: '娘娘莞爾一笑，暫不賜簽。請誠心再擲一次。' },
