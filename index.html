@@ -413,12 +413,17 @@
   <!-- Step 1 -->
   <section class="step active" id="step-pray">
     <div class="card">
-      <h2>求簽提示</h2>
+      <h2>求籤提示</h2>
       <div class="pray-box">
-        請先靜心，默念您的 <b>姓名、出生年月日、性別、居住地址</b> 與 <b>所求之事</b>，
-        誠心向桃花千手觀音稟告，懇請賜下姻緣靈籤指引。<br>
-        接著向桃花千手觀音擲杯詢問是否賜簽：<b>聖筊</b> 即獲允准；
-        <b>笑筊、陰筊</b> 則請誠心再擲，直至求得聖筊為止。
+        請先靜心屏息，默念<b>姓名、性別、出生年月日（農曆為佳，儘量連同時辰）、居住地址</b>；若誠心願意，亦可自行補充更多個人資料，以表真誠。<br><br>
+        誠心向「桃花千手觀音」稟告以上資料，以及您想祈求問卜之事情，懇請神明賜下姻緣靈籤指引。<br><br>
+        接著向『桃花千手觀音』擲杯請示是否允許賜籤：<br>
+        &nbsp;&nbsp;• 得<b>聖筊</b>，即蒙神明應允，可以抽籤；<br>
+        &nbsp;&nbsp;• 得<b>笑筊、陰筊</b>，則請再誠心稟告、重新擲杯，直至求得聖筊為止。
+      </div>
+      <div class="pray-box" style="background:#fdf2d8; border-style:solid; border-color:#e8d5a8;">
+        <b style="color:#8c1515;">【溫馨說明】</b><br>
+        本套靈籤專門用於祈求和詢問有關感情、姻緣、婚姻之事，為姻緣專用靈籤。若要詢問其他範疇之事，敬請另行選用相應靈籤誠心問卜。
       </div>
       <div class="btn-row">
         <button class="btn red" onclick="goCups()">我已誠心默念 → 擲杯問允</button>
@@ -430,7 +435,7 @@
   <section class="step" id="step-cups">
     <div class="card">
       <h2>擲杯問允</h2>
-      <p style="text-align:center; font-size:14px; color:#8c6a1f;">誠心向桃花千手觀音擲杯，詢問是否賜簽</p>
+      <p style="text-align:center; font-size:14px; color:#8c6a1f;">誠心向桃花娘娘擲杯，詢問是否賜簽</p>
       <div class="cup-box" id="cup-box">
         <img class="cup-img" id="cup1" alt="陽杯">
         <img class="cup-img" id="cup2" alt="陰杯">
@@ -554,9 +559,9 @@ function throwCups() {
     const rn = Math.random();
     const out = rn < 0.8 ? 'sheng' : (rn < 0.9 ? 'xiao' : 'yin');
     const info = {
-      sheng: { name: '聖筊', cls: 'sheng', msg: '桃花千手觀音允准賜簽，可喜可賀！請前往搖籤筒求籤。' },
-      xiao: { name: '笑筊', cls: 'xiao', msg: '桃花千手觀音莞爾一笑，暫不賜簽。請誠心再擲一次。' },
-      yin: { name: '陰筊', cls: 'yin', msg: '桃花千手觀音示以不允，未獲允准。請誠心再擲一次。' }
+      sheng: { name: '聖筊', cls: 'sheng', msg: '桃花娘娘允准賜簽，可喜可賀！請前往搖籤筒求籤。' },
+      xiao: { name: '笑筊', cls: 'xiao', msg: '娘娘莞爾一笑，暫不賜簽。請誠心再擲一次。' },
+      yin: { name: '陰筊', cls: 'yin', msg: '娘娘示以不允，未獲允准。請誠心再擲一次。' }
     }[out];
     $('cup1').src = out === 'yin' ? IMG_CUP_YIN : IMG_CUP_YANG;
     $('cup2').src = out === 'xiao' ? IMG_CUP_YANG : IMG_CUP_YIN;
