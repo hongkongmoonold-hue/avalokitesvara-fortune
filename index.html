@@ -435,7 +435,7 @@
   <section class="step" id="step-cups">
     <div class="card">
       <h2>擲杯問允</h2>
-      <p style="text-align:center; font-size:14px; color:#8c6a1f;">誠心向桃花娘娘擲杯，詢問是否賜簽</p>
+      <p style="text-align:center; font-size:14px; color:#8c6a1f;">誠心向桃花千手觀音擲杯，詢問是否賜簽</p>
       <div class="cup-box" id="cup-box">
         <img class="cup-img" id="cup1" alt="陽杯">
         <img class="cup-img" id="cup2" alt="陰杯">
@@ -559,9 +559,9 @@ function throwCups() {
     const rn = Math.random();
     const out = rn < 0.8 ? 'sheng' : (rn < 0.9 ? 'xiao' : 'yin');
     const info = {
-      sheng: { name: '聖筊', cls: 'sheng', msg: '桃花娘娘允准賜簽，可喜可賀！請前往搖簽筒求簽。' },
-      xiao: { name: '笑筊', cls: 'xiao', msg: '娘娘莞爾一笑，暫不賜簽。請誠心再擲一次。' },
-      yin: { name: '陰筊', cls: 'yin', msg: '娘娘示以不允，未獲允准。請誠心再擲一次。' }
+      sheng: { name: '聖筊', cls: 'sheng', msg: '桃花千手觀音允准賜簽，可喜可賀！請前往搖簽筒求簽。' },
+      xiao: { name: '笑筊', cls: 'xiao', msg: '桃花千手觀音莞爾一笑，暫不賜簽。請誠心再擲一次。' },
+      yin: { name: '陰筊', cls: 'yin', msg: '桃花千手觀音示以不允，未獲允准。請誠心再擲一次。' }
     }[out];
     $('cup1').src = out === 'yin' ? IMG_CUP_YIN : IMG_CUP_YANG;
     $('cup2').src = out === 'xiao' ? IMG_CUP_YANG : IMG_CUP_YIN;
